@@ -296,18 +296,14 @@
 
   .demo-frame-body {
     aspect-ratio: 16 / 9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background:
-      radial-gradient(circle at center, var(--surface-alt), transparent 70%),
-      var(--surface);
+    background: var(--surface);
   }
 
   .demo-frame-body img {
-    width: clamp(72px, 14vw, 140px);
-    height: clamp(72px, 14vw, 140px);
-    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
   }
 
   /* Features */
@@ -445,7 +441,7 @@
           <span></span>
         </div>
         <div class="demo-frame-body">
-          <img src="onboard-icon.png" alt="Onboard app icon" width="140" height="140">
+          <img src="assets/screenshot-walkthrough.png" alt="Onboard's Start here walkthrough view, listing entry points and core files in dependency order with an Open file link on each row" width="1440" height="900" loading="lazy">
         </div>
       </div>
     </div>
