@@ -9,13 +9,14 @@
 
 <meta property="og:title" content="Onboard: Understand Any Codebase in Minutes">
 <meta property="og:description" content="Free, local-first desktop app that turns any repo into a guided walkthrough. Windows and Linux, fully offline. Early access Pro is $10 for the first 20 people.">
-<meta property="og:image" content="assets/og.png">
+<meta property="og:image" content="https://app-onboard.netlify.app/assets/og.png">
+<meta property="og:url" content="https://app-onboard.netlify.app/">
 <meta property="og:type" content="website">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Onboard: Understand Any Codebase in Minutes">
 <meta name="twitter:description" content="Free, local-first desktop app that turns any repo into a guided walkthrough. Windows and Linux, fully offline. Early access Pro is $10 for the first 20 people.">
-<meta name="twitter:image" content="assets/og.png">
+<meta name="twitter:image" content="https://app-onboard.netlify.app/assets/og.png">
 
 <link rel="icon" href="onboard-icon.png" type="image/png">
 
@@ -423,7 +424,7 @@
           </p>
         </div>
 
-        <a class="btn btn-secondary" href="#"><!-- CHECKOUT_URL: replace this href with the real checkout link before launch -->Early access Pro, $10</a>
+        <a id="checkout-link" class="btn btn-secondary" href="#">Early access Pro, $10</a>
       </div>
 
       <p class="hero-note">Lifetime Pro license for the first 20 people.</p>
@@ -480,6 +481,9 @@
   "use strict";
 
   var API_URL = "https://api.github.com/repos/uruqierisi/onboard/releases/latest";
+
+  /** Not set up yet. Replace this one string with the real checkout link when it exists. */
+  var CHECKOUT_URL = "#";
 
   var FALLBACK_WINDOWS_EXE_URL =
     "https://github.com/uruqierisi/onboard/releases/download/v0.1.0/Onboard_0.1.0_x64-setup.exe";
@@ -573,6 +577,8 @@
   }
 
   try {
+    var checkoutLink = document.getElementById("checkout-link");
+    if (checkoutLink) checkoutLink.setAttribute("href", CHECKOUT_URL);
     setInitialLayoutForOS(detectOS());
     fetchAndUpgrade();
   } catch (err) {
