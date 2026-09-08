@@ -398,7 +398,7 @@
       <img src="onboard-icon.png" alt="" aria-hidden="true" width="28" height="28">
       Onboard
     </a>
-    <a class="nav-link" href="https://github.com/uruqierisi/onboard">GitHub</a>
+    <a class="nav-link" href="https://github.com/kodeksidev/onboard">GitHub</a>
   </div>
 </nav>
 
@@ -411,16 +411,16 @@
       <div class="hero-actions">
         <div class="download-actions">
           <div class="download-primary-row">
-            <a id="download-primary" class="btn btn-download" href="https://github.com/uruqierisi/onboard/releases/download/v0.1.0/Onboard_0.1.0_x64-setup.exe">
+            <a id="download-primary" class="btn btn-download" href="https://github.com/kodeksidev/onboard/releases/download/v0.1.0/Onboard_0.1.0_x64-setup.exe">
               <span id="download-primary-label">Download free</span>
             </a>
             <span id="download-primary-version" class="version-tag">v0.1.0</span>
           </div>
           <p id="download-secondary" class="download-secondary">
             Also available for Linux
-            (<a id="link-linux-deb" href="https://github.com/uruqierisi/onboard/releases/download/v0.1.0/Onboard_0.1.0_amd64.deb">.deb</a>
+            (<a id="link-linux-deb" href="https://github.com/kodeksidev/onboard/releases/download/v0.1.0/Onboard_0.1.0_amd64.deb">.deb</a>
             /
-            <a id="link-linux-rpm" href="https://github.com/uruqierisi/onboard/releases/download/v0.1.0/Onboard-0.1.0-1.x86_64.rpm">.rpm</a>)
+            <a id="link-linux-rpm" href="https://github.com/kodeksidev/onboard/releases/download/v0.1.0/Onboard-0.1.0-1.x86_64.rpm">.rpm</a>)
           </p>
         </div>
 
@@ -471,7 +471,7 @@
   <div class="container">
     <p>Built by a solo developer.</p>
     <div class="footer-links">
-      <a href="https://github.com/uruqierisi/onboard">GitHub</a>
+      <a href="https://github.com/kodeksidev/onboard">GitHub</a>
       <a href="https://x.com/kodeksidev">X</a>
     </div>
   </div>
@@ -481,14 +481,14 @@
 (function () {
   "use strict";
 
-  var API_URL = "https://api.github.com/repos/uruqierisi/onboard/releases/latest";
+  var API_URL = "https://api.github.com/repos/kodeksidev/onboard/releases/latest";
 
   var CHECKOUT_URL = "https://docs.google.com/forms/d/e/1FAIpQLScQfgvCyr_bw7c-QCBCFh4WSFRJhGtp0-nDhGTP5MNpfCY85g/viewform";
 
   var FALLBACK_WINDOWS_EXE_URL =
-    "https://github.com/uruqierisi/onboard/releases/download/v0.1.0/Onboard_0.1.0_x64-setup.exe";
+    "https://github.com/kodeksidev/onboard/releases/download/v0.1.0/Onboard_0.1.0_x64-setup.exe";
   var FALLBACK_LINUX_DEB_URL =
-    "https://github.com/uruqierisi/onboard/releases/download/v0.1.0/Onboard_0.1.0_amd64.deb";
+    "https://github.com/kodeksidev/onboard/releases/download/v0.1.0/Onboard_0.1.0_amd64.deb";
 
   function detectOS() {
     var ua = (navigator.userAgent || "").toLowerCase();
