@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy — Onboard</title>
+<meta name="description" content="Onboard's static analysis runs entirely on your machine and makes no network calls. The optional AI panel is the only outbound path and is off by default. The website has no analytics, cookies or tracking.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0F1A">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="onboard-icon.png" type="image/png">
+<link rel="stylesheet" href="assets/legal.css">
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Primary">
+  <div class="container">
+    <a class="brand" href="/">
+      <img src="onboard-icon.png" alt="" aria-hidden="true" width="28" height="28">
+      Onboard
+    </a>
+    <a class="nav-link" href="https://github.com/kodeksidev/onboard">GitHub</a>
+  </div>
+</nav>
+
+<main class="legal">
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="legal-updated">Last updated: 9 September 2026</p>
+
+    <p class="legal-lede">The short version: Onboard analyses your code on your own machine and sends nothing anywhere unless you turn on the AI panel. This website has no analytics, no cookies and no tracking scripts.</p>
+
+    <h2>The app</h2>
+
+    <h3>Static analysis is local</h3>
+    <p>Everything Onboard does by default happens on your machine: reading your repository, building the module map and dependency graph, ranking files, and generating the walkthrough. Static analysis makes <strong>no network calls</strong>. This is enforced by egress checks in CI, so a change that introduced one would fail the build.</p>
+    <p>There is no telemetry, no usage analytics and no crash reporting. Your code, file names and repository contents are never uploaded, and are never seen by anyone but you.</p>
+
+    <h3>The optional AI panel</h3>
+    <p>The AI panel is the only part of Onboard that talks to the network. It is <strong>off by default</strong> and does nothing until you turn it on.</p>
+    <p>When it is on, and only when you actively ask for an explanation, Onboard sends the following to the configured AI provider:</p>
+    <ul>
+      <li>the contents of the file or module you asked about</li>
+      <li>related context from your repository: file paths, and the names of the imports and symbols it depends on</li>
+      <li>your question, or the explanation prompt for that module</li>
+    </ul>
+    <p>It does not send your whole repository, and it never sends anything on its own schedule. Nothing leaves your machine without an explicit request from you.</p>
+    <p>What the AI provider does with what it receives is governed by that provider's own privacy policy, not this one. Turn the panel off and Onboard makes no outbound connections at all.</p>
+
+    <h2>The website</h2>
+    <p>This site is a set of static pages. There are no analytics, no cookies, no tracking pixels and no third-party scripts. Nothing is stored in your browser and no profile of you is built.</p>
+    <p>The site is hosted on Netlify, which may log standard request data such as IP address, user agent, requested page and timestamp for security and abuse prevention, as any web host does. Those logs belong to Netlify and are handled under their privacy policy.</p>
+
+    <h2>The early access form</h2>
+    <p>Reserving an early access place uses a Google Form, which collects your email address. Google's privacy policy applies to the form itself.</p>
+    <p>Your email is used only to send you the payment link and, after purchase, your licence key and notice of features shipping. It is never shared, sold, or used for unrelated marketing. Ask by email and it will be deleted.</p>
+
+    <h2>Purchases</h2>
+    <p>Payment is processed by <a href="https://www.paddle.com/">Paddle</a> as merchant of record. Paddle collects and holds your billing details; card data never reaches me. From Paddle I receive your email address and the order details, meaning what was bought, when, the amount, and the country for tax purposes. That information is used to issue and support your licence.</p>
+
+    <h2>Your data</h2>
+    <p>What is held about you is short: an email address, and an order record if you bought a licence. You can ask by email for a copy of it, a correction, or its deletion. Records that must be kept for tax purposes are kept as long as the law requires.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>Updates are posted on this page with a new last updated date. If the app ever starts sending something it does not send today, this page will say so before that version ships.</p>
+
+    <h2>Contact</h2>
+    <p>Privacy questions: <a href="mailto:kodeksidev@gmail.com">kodeksidev@gmail.com</a>. See also the <a href="terms.html">Terms of Service</a> and <a href="refunds.html">Refund Policy</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>Built by a solo developer.</p>
+    <div class="footer-links">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refunds.html">Refunds</a>
+      <a href="https://github.com/kodeksidev/onboard">GitHub</a>
+      <a href="https://x.com/kodeksidev">X</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
